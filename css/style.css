@@ -1,3 +1,94 @@
+/* Header area */
+.page-header {
+    display: grid;
+    grid-template-areas:
+        "logo regular-menu social-menu";
+    row-gap: 1.5rem;
+    justify-content: space-between;
+    margin: 1rem 1.5rem;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.25rem;
+    letter-spacing: 3px;
+    grid-area: logo;
+}
+
+.page-header-menu-container {
+    display: flex;
+}
+
+.page-header-menu-container--regular {
+    grid-area: regular-menu;
+}
+
+.page-header-menu-container--social {
+    grid-area: social-menu;
+}
+
+.menu,
+.social {
+    display: flex;
+    list-style: none;
+}
+
+.menu-item {
+    padding-right: 1rem;
+    text-transform: uppercase;
+}
+
+.menu-item>.menu-link {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.social .icon {
+    height: 1rem;
+}
+
+.tagline, .section-title {
+    margin: 5rem 0 3.5rem;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+/* Main area > header banner */
+.main-banner {
+    height: 600px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25),
+            rgba(255, 255, 255, 0.25)),
+        url(../images/IMG_3119.MOV);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-banner-title {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 4.5rem;
+    letter-spacing: 4px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+}
+
 h1 {
     color: white;
     text-align: center;
@@ -6,21 +97,6 @@ h1 {
 h2 {
     color: whitesmoke;
     text-align: center;
-}
-
-h3 {
-    color: black;
-}
-
-h5 {
-    color: rgb(235, 43, 171);
-    text-align: center;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 .Baskets {
