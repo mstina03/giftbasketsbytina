@@ -54,10 +54,14 @@
 .tagline, .section-title {
     margin: 5rem 0 3.5rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.75rem;
     text-transform: uppercase;
     font-weight: 200;
     letter-spacing: 1px;
+}
+
+.section-title {
+    font-size: 2rem;
 }
 
 /* Main area > header banner */
@@ -89,22 +93,86 @@ footer {
     margin: 2rem 0;
 }
 
+/* Generic utilities */
+.d-none {
+    display: none;
+}
+
+.basket-container {
+    text-align: center;
+}
+
+/* Articles area 
+  -md suffix: we target medium screen sizes and above
+*/
+.two-columns-container-md {
+    display: flex;
+    justify-content: space-between;
+}
+
+.two-columns-container-md__item {
+    width: 45%;
+    margin-bottom: 5rem;
+}
+
+.column-heading {
+    font-size: 1.50rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.column-p {
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.two-columns-container-md__item img {
+    width: 100%;
+}
+
+/* Generic components */
+.btn {
+    padding: 1rem 2rem;
+    border: 2px solid black;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 0.67rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn:hover,
+.button:focus,
+.button:active {
+    color: white;
+    background-color: black;
+
+}
+
 h1 {
     color: white;
     text-align: center;
 }
 
 h2 {
-    color: white;
+    color: black;
     text-align: center;
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-size: 3rem;
 }
 
 h3 {
-    color: white;
+    color: black;
     font-size: 1.25rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+
+}
+
+h4 {
+    color: black;
+    font-size: 2rem;
 }
 
 .Baskets {
@@ -112,6 +180,6 @@ h3 {
 }
 
 .BasketImages {
-    /* width: 500px; */
-    height: 500px;
+    width: 200px;
+    /* height: 500px; */
 }
