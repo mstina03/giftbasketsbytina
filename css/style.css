@@ -227,3 +227,40 @@ label {
     background-color: whitesmoke;
     text-align: center;
 }
+
+/* Media queries */
+/* Breakpoint suggestions: https://getbootstrap.com/docs/5.1/layout/breakpoints/ 
+   Warning: Bootstrap is mobile first, not desktop first, so in Bootstrap,
+   you have min-width and not max-width.
+*/
+
+
+@media screen and (max-width: 768px) {
+
+    .page-header {
+        grid-template-areas:
+            "logo social-menu"
+            "regular-menu regular-menu";
+    }
+
+    .two-columns-container-md {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .two-columns-container-md__item {
+        width: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .d-400minus-none {
+        display: none;
+    }
+}
